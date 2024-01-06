@@ -1,7 +1,3 @@
-I encountered some package dependency issues when trying to install on my kali vm. Run these commands first before git cloning the repo and running the script:
-
-sudo apt-get install libldap2-dev,  sudo apt-get install libsasl2-dev,  pip3 install python-ldap
-
 Check out the new and improved `windapsearch` - rewritten in Go with some new features (including JSON support)!
 
 https://github.com/ropnop/go-windapsearch
@@ -16,6 +12,9 @@ You can always use a tool like `ldapsearch` to perform custom LDAP queries again
 `windapsearch` requires the `python-ldap` module. You should be able to get up and running with two commands:
 
 ```
+$ sudo apt-get install libldap2-dev
+$ sudo apt-get install libsasl2-dev
+$ pip3 install python-ldap
 $ git clone https://github.com/ropnop/windapsearch.git
 $ pip install python-ldap #or apt-get install python-ldap
 $ ./windapsearch.py
