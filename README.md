@@ -1,10 +1,6 @@
-I encountered some package dependency issues when trying to install on my kali vim. Run these commands first before git cloning the repo and running the script:
+I encountered some package dependency issues when trying to install on my kali vm. Run these commands first before git cloning the repo and running the script:
 
-sudo apt-get install libldap2-dev
-sudo apt-get install libsasl2-dev
-pip3 install python-ldap
-
-
+sudo apt-get install libldap2-dev,  sudo apt-get install libsasl2-dev,  pip3 install python-ldap
 
 Check out the new and improved `windapsearch` - rewritten in Go with some new features (including JSON support)!
 
